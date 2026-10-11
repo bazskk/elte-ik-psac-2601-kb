@@ -6,6 +6,7 @@
 image::docker-install.gif[Installing rootless docker service]
 
 == Run docker service
+image::docker-status.gif[The running docker demon]
 
 == Docker commands
 === run
