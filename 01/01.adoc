@@ -19,3 +19,9 @@ The `EXPOSE <port-no>/protocol` directive in the `Dockerfile`
 image::docker-publish.gif[Publishing a port with -p]
 
 _Note: -d is to detach from the console of the container_
+
+=== VOLUME
+
+Volume command is to create a persistent storage *managed by Docker* this comes handy if you don't have to have access to the storage from the host, only from the container. Volumes can be mounted on the filesystem of the containers.
+
+image::docker-volume.gif[Demonstrating a volume]
