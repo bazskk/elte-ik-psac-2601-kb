@@ -3,16 +3,16 @@
 == History
 
 == Setup local dev PC
-image::docker-install.gif[Installing rootless docker service]
+image::assets/docker-install.gif[Installing rootless docker service]
 
 == Run docker service
-image::docker-status.gif[The running docker demon]
+image::assets/docker-status.gif[The running docker demon]
 
 == Docker commands
 === run
 `docker run <options> <image>` runs a container based on an image given.
 
-image::docker-run.gif[Running hello-world]
+image::assets/docker-run.gif[Running hello-world]
 
 === EXPOSE
 The `EXPOSE <port-no>/protocol` directive in the `Dockerfile`.
@@ -21,7 +21,7 @@ The `EXPOSE <port-no>/protocol` directive in the `Dockerfile`.
 The command `docker run --publish <HOST_IP>:<HOST_PORT>:<CONTAINER_PORT>` maps the `CONTAINER_PORT` to the `HOST_PORT` on the host. That's a way to avoid binding to privileged ports or run several containers that would bind to the same port.
 `docker run --publish-all` maps all the `EXPOSED` ports on the host as-is.
 
-image::docker-publish.gif[Publishing a port with -p]
+image::assets/docker-publish.gif[Publishing a port with -p]
 
 _Note: -d is to detach from the console of the container_
 
@@ -29,33 +29,33 @@ _Note: -d is to detach from the console of the container_
 
 The `volume` command is to create a persistent storage *managed by Docker* this comes handy if you don't have to have access to the storage from the host, only from the container. Volumes can be mounted on the filesystem of the containers.
 
-image::docker-volume.gif[Demonstrating a volume]
+image::assets/docker-volume.gif[Demonstrating a volume]
 
 === mount
 The `mount` command is to bind mount a folder on the host machine to the container, creating a 'shared folder' between the guest and the host.
 
-image::docker-mount.gif[Demonstrating the mount command]
+image::assets/docker-mount.gif[Demonstrating the mount command]
 
 === network
 With the `network` subcommand docker networks can be defined which later could be attached to containers.
 
 To create the docker part for the architecture below, the following commands were used.
 
-image::docker-scheme.jpg[Sample docker architecture]
+image::assets/docker-scheme.jpg[Sample docker architecture]
 
-image::docker-network.gif[Demonstrating the network command]
+image::assets/docker-network.gif[Demonstrating the network command]
 
 === exec
 With the `exec` subcommand commands can be sent to running containers.
 
-image::docker-exec.gif[Demonstrating docker exec]
+image::assets/docker-exec.gif[Demonstrating docker exec]
 
 === stop
 With the `stop` subcommand running containers can be halted.
 
-image::docker-stop.gif[Demonstrating docker stop]
+image::assets/docker-stop.gif[Demonstrating docker stop]
 
 === restart
 With the `restart` command already existing but stopped containers can be restarted.
 
-image::docker-restart.gif[Demonstrating restart command]
+image::assets/docker-restart.gif[Demonstrating restart command]
