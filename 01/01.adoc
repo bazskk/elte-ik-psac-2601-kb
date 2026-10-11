@@ -44,3 +44,14 @@ To create the docker part for the architecture below, the following commands wer
 image::docker-scheme.jpg[Sample docker architecture]
 
 image::docker-network.gif[Demonstrating the network command]
+
+=== exec
+With the `exec` subcommand commands can be sent to running containers.
+
+image::docker-exec.gif[Demonstrating docker exec]
+
+=== stop
+With the `stop` subcommand running containers can be halted.
+
+image::docker-stop.gif[Demonstrating docker stop]
+
