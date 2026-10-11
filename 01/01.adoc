@@ -35,3 +35,12 @@ image::docker-volume.gif[Demonstrating a volume]
 The `mount` command is to bind mount a folder on the host machine to the container, creating a 'shared folder' between the guest and the host.
 
 image::docker-mount.gif[Demonstrating the mount command]
+
+=== network
+With the `network` subcommand docker networks can be defined which later could be attached to containers.
+
+To create the docker part for the architecture below, the following commands were used.
+
+image::docker-scheme.jpg[Sample docker architecture]
+
+image::docker-network.gif[Demonstrating the network command]
