@@ -3,6 +3,7 @@
 == History
 == Setup local dev PC
 == Run docker service
+
 == Docker commands
 === run
 `docker run <options> <image>` runs a container based on an image given.
@@ -13,7 +14,7 @@ image::docker-run.gif[Running hello-world]
 The `EXPOSE <port-no>/protocol` directive in the `Dockerfile` 
 
 === publish
-`docker run --publish <HOST_IP>:<HOST_PORT>:<CONTAINER_PORT>` maps the `CONTAINER_PORT` to the `HOST_PORT` on the host. That's a way to avoid binding to privileged ports or run several containers that would bind to the same port.
+The command `docker run --publish <HOST_IP>:<HOST_PORT>:<CONTAINER_PORT>` maps the `CONTAINER_PORT` to the `HOST_PORT` on the host. That's a way to avoid binding to privileged ports or run several containers that would bind to the same port.
 `docker run --publish-all` maps all the `EXPOSED` ports on the host as-is
 
 image::docker-publish.gif[Publishing a port with -p]
@@ -22,7 +23,7 @@ _Note: -d is to detach from the console of the container_
 
 === volume
 
-Volume command is to create a persistent storage *managed by Docker* this comes handy if you don't have to have access to the storage from the host, only from the container. Volumes can be mounted on the filesystem of the containers.
+The `volume` command is to create a persistent storage *managed by Docker* this comes handy if you don't have to have access to the storage from the host, only from the container. Volumes can be mounted on the filesystem of the containers.
 
 image::docker-volume.gif[Demonstrating a volume]
 
