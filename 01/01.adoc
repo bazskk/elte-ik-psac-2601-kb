@@ -5,5 +5,7 @@
 == Run docker service
 == Docker commands
 === run
-`docker run` runs a container based on an image given.
+`docker run <options> <image>` runs a container based on an image given.
+
 image::docker-run.gif[Running hello-world]
+
