@@ -55,3 +55,7 @@ With the `stop` subcommand running containers can be halted.
 
 image::docker-stop.gif[Demonstrating docker stop]
 
+=== restart
+With the `restart` command already existing but stopped containers can be restarted.
+
+image::docker-restart.gif[Demonstrating restart command]
