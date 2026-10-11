@@ -1,7 +1,11 @@
 = PSAC #1
 
 == Motivation
-
+- Isolation of processes
+- Lighter weight than traditional VMs
+- Utilizes the means (eg. namespaces) provided by the host kernel
+    - That's why VM is needed on Windows & MacOS
+    - Similar concept to FreeBSD jails.
 == History
 
 == Setup local dev PC
