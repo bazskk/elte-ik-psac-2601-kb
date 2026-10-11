@@ -9,3 +9,13 @@
 
 image::docker-run.gif[Running hello-world]
 
+=== EXPOSE
+The `EXPOSE <port-no>/protocol` directive in the `Dockerfile` 
+
+=== publish
+`docker run --publish <HOST_IP>:<HOST_PORT>:<CONTAINER_PORT>` maps the `CONTAINER_PORT` to the `HOST_PORT` on the host. That's a way to avoid binding to privileged ports or run several containers that would bind to the same port.
+`docker run --publish-all` maps all the `EXPOSED` ports on the host as-is
+
+image::docker-publish.gif[Publishing a port with -p]
+
+_Note: -d is to detach from the console of the container_
