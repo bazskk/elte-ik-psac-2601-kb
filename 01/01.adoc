@@ -1,7 +1,10 @@
 = PSAC #1
 == Motivation
 == History
+
 == Setup local dev PC
+image::docker-install.gif[Installing rootless docker service]
+
 == Run docker service
 
 == Docker commands
